@@ -35,8 +35,8 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
       //   purpose: 'maskable',  // Javítva: 'any maskable' -> 'maskable'
       // },
     ],
-    theme_color: '#171717',
-    background_color: '#f0e7db',
+    theme_color: '#FFFFFF',
+    background_color: '#FFFFFF',
     display: 'standalone',
     scope: '/pshopping-list',
     start_url: '/pshopping-list',

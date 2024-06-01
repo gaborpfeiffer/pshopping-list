@@ -11,25 +11,25 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
     description: 'Single page shopping list app',
     icons: [
       {
-        src: '/android-chrome-192x192.png',
+        src: '/pshopping-list/android-chrome-192x192.png',
         sizes: '192x192',
         type: 'image/png',
-        purpose: 'any', // Javítva: 'favicon' -> 'any'
+        purpose: 'any',
       },
       {
-        src: '/android-chrome-512x512.png',
+        src: '/pshopping-list/android-chrome-512x512.png',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'any', // Javítva: 'favicon' -> 'any'
+        purpose: 'any',
       },
       {
-        src: '/apple-touch-icon.png',
+        src: '/pshopping-list/apple-touch-icon.png',
         sizes: '180x180',
         type: 'image/png',
-        purpose: 'any', // Javítva: 'apple touch icon' -> 'any'
+        purpose: 'any',
       },
       // {
-      //   src: '/maskable_icon.png',
+      //   src: '/pshopping-list/maskable_icon.png',
       //   sizes: '512x512',
       //   type: 'image/png',
       //   purpose: 'maskable',  // Javítva: 'any maskable' -> 'maskable'

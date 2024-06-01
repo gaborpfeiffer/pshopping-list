@@ -7,7 +7,7 @@ import { deleteAllShopItemUseCase } from '../domain/useCases/shopItem/deleteAllS
 import { deleteShopItem } from '../domain/useCases/shopItem/deleteShopItemUseCase.ts';
 import { getShopItemsUseCase } from '../domain/useCases/shopItem/getShopItemsUseCase.ts';
 import { updateShopItemUseCase } from '../domain/useCases/shopItem/updateShopItemUseCase.ts';
-import { shopItemListViewModel } from '../presenter/pages/ShopItemList/shopItemListViewModel.ts';
+import { itemListViewModel } from '../presenter/pages/ItemList/itemListPageViewModel.ts';
 
 const container = createContainer();
 
@@ -19,7 +19,8 @@ container.register({
   updateShopItemUseCase: asFunction(updateShopItemUseCase),
   deleteShopItemUseCase: asFunction(deleteShopItem),
   deleteAllShopItemUseCase: asFunction(deleteAllShopItemUseCase),
-  shopItemListViewModel: asFunction(shopItemListViewModel),
+  //shopItemListViewModel: asFunction(shopItemListViewModel),
+  itemListViewModel: asFunction(itemListViewModel),
   shopItemViewModel: asFunction(() => shopItemViewModelFactory),
 });
 

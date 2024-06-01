@@ -4,7 +4,7 @@ import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa';
 
 const manifestForPlugIn: Partial<VitePWAOptions> = {
   registerType: 'prompt',
-  includeAssets: ['favicon.ico', 'apple-touc-icon.png'], //'masked-icon.svg'
+  includeAssets: ['favicon.ico', 'apple-touch-icon.png'], //'masked-icon.svg'
   manifest: {
     name: 'P+ShoppingList',
     short_name: 'PShopList',
@@ -14,25 +14,25 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
         src: '/android-chrome-192x192.png',
         sizes: '192x192',
         type: 'image/png',
-        purpose: 'favicon',
+        purpose: 'any', // Javítva: 'favicon' -> 'any'
       },
       {
         src: '/android-chrome-512x512.png',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'favicon',
+        purpose: 'any', // Javítva: 'favicon' -> 'any'
       },
       {
         src: '/apple-touch-icon.png',
         sizes: '180x180',
         type: 'image/png',
-        purpose: 'apple touch icon',
+        purpose: 'any', // Javítva: 'apple touch icon' -> 'any'
       },
       // {
       //   src: '/maskable_icon.png',
       //   sizes: '512x512',
       //   type: 'image/png',
-      //   purpose: 'any maskable',
+      //   purpose: 'maskable',  // Javítva: 'any maskable' -> 'maskable'
       // },
     ],
     theme_color: '#171717',
